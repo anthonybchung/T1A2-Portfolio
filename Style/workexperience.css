@@ -96,6 +96,10 @@
   color: var(--primary-color);
 }
 
+.card-description h3{
+  font-size: 0.8em;
+}
+
 .experience-card ul {
   margin-left: 20px;
 }
