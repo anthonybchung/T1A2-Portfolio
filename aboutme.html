@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="Assets/LOGO.ico" />
+
+  <!-- Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300;1,400;1,900&display=swap"
+    rel="stylesheet" />
+  <!--**********************-->
+
+  <link rel="stylesheet" href="/Style/style.css" />
+  <link rel="stylesheet" href="/Style/aboutme.css" />
+  <script src="/Script/script.js" defer></script>
+  <title>ABCHUNG STACK</title>
+</head>
+
+<body>
+  <!-- ******* HEADER ****** -->
+  <header>
+    <div class="header-container">
+      <div class="logo-name">
+        <div class="logo">
+          <a tabindex="1" href="./index.html">
+            <div class="logo">
+              <svg width="100%" height="100%" viewBox="0 0 88 88" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+                style="
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                    stroke-linecap: round;
+                    stroke-miterlimit: 10;
+                  ">
+                <g transform="matrix(1,0,0,1,-7.49039,-314.49)">
+                  <g transform="matrix(0.827586,0,0,0.8,4.65517,74)">
+                    <g transform="matrix(1.20833,-0,-0,1.25,3.42588,300.613)">
+                      <path
+                        d="M22.273,59.334C21.235,61.65 22.272,64.373 24.588,65.412C26.904,66.45 29.627,65.412 30.665,63.096C31.703,60.781 30.666,58.057 28.35,57.019C26.034,55.981 23.311,57.018 22.273,59.334Z"
+                        style="
+                            fill: none;
+                            stroke: currentcolor;
+                            stroke-width: 4.6px;
+                          " />
+                      <path
+                        d="M46.005,67.638C43.872,69.013 41.024,68.397 39.649,66.264C38.274,64.131 38.89,61.283 41.024,59.908C43.157,58.533 46.005,59.149 47.38,61.282C48.755,63.415 48.139,66.264 46.005,67.638Z"
+                        style="
+                            fill: none;
+                            stroke: currentcolor;
+                            stroke-width: 4.6px;
+                          " />
+                      <path
+                        d="M28.35,57.019C34.682,42.894 45.165,19.51 45.165,19.51L57.579,58.71L19.51,40.51L61.717,25.11L53.441,45.11L67.51,48.31C67.51,48.31 56.08,55.675 47.38,61.282"
+                        style="
+                            fill: none;
+                            stroke: currentcolor;
+                            stroke-width: 4.6px;
+                            stroke-linejoin: round;
+                            stroke-miterlimit: 1.5;
+                          " />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </div>
+        <h1>About Me</h1>
+      </div>
+      <nav class="nav-desktop">
+        <ul>
+          <li><a tabindex="2" href="./index.html">Home</a></li>
+          <li><a tabindex="3" href="./workexperience.html">Experience</a></li>
+          <li><a tabindex="4" href="./blog.html">Blog</a></li>
+          <li><a class="current-page" tabindex="5" href="./aboutme.html">About Me</a></li>
+        </ul>
+      </nav>
+      <button tabindex="6" id="buttonMenu" class="button-menu">
+        <div id="hamBars" class="ham-bars"></div>
+      </button>
+    </div>
+  </header>
+  <!-- Sliding Nav-->
+  <nav id="slideNav" class="nav-mobile">
+    <ul>
+      <li><a tabindex="7" href="./index.html">Home</a></li>
+      <li><a tabindex="8" href="./workexperience.html">Experience</a></li>
+      <li><a tabindex="9" href="./blog.html">Blog</a></li>
+      <li><a class="current-page" tabindex="10" href="./aboutme.html">About Me</a></li>
+    </ul>
+  </nav>
+
+  <!-- ****** MAIN ******-->
+  <main>
+    <section class="about-banner">
+      <div class="about-info">
+        <h2>Anthony B. Chung</h2>
+        <address><a tabindex="11" href="mailto: 11941@coderacademy.edu.au">11941@coderacademy.edu.au</a></address>
+        <section class="external-links">
+          <button tabindex="12" type="button" onclick="window.open('https://github.com/anthonybchung', '_blank');">
+            <svg class="external-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+              <path
+                d="M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z" />
+            </svg>
+          </button>
+          <button tabindex="13" type="button"
+            onclick="window.open('https://www.linkedin.com/in/anthony-chung-94104b232/','_blank');">
+            <svg class="external-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+              <path
+                d="M25,2C12.318,2,2,12.317,2,25s10.318,23,23,23s23-10.317,23-23S37.682,2,25,2z M18,35h-4V20h4V35z M16,17 c-1.105,0-2-0.895-2-2c0-1.105,0.895-2,2-2s2,0.895,2,2C18,16.105,17.105,17,16,17z M37,35h-4v-5v-2.5c0-1.925-1.575-3.5-3.5-3.5 S26,25.575,26,27.5V35h-4V20h4v1.816C27.168,20.694,28.752,20,30.5,20c3.59,0,6.5,2.91,6.5,6.5V35z" />
+            </svg>
+          </button>
+          <button tabindex="14" type="button" onclick="window.open('https://twitter.com/AnthonyBChung');">
+            <svg class="external-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+              <path
+                d="M25,2C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23S37.683,2,25,2z M36.237,20.524 c0.01,0.236,0.016,0.476,0.016,0.717C36.253,28.559,30.68,37,20.491,37c-3.128,0-6.041-0.917-8.491-2.489 c0.433,0.052,0.872,0.077,1.321,0.077c2.596,0,4.985-0.884,6.879-2.37c-2.424-0.044-4.468-1.649-5.175-3.847 c0.339,0.065,0.686,0.1,1.044,0.1c0.505,0,0.995-0.067,1.458-0.195c-2.532-0.511-4.441-2.747-4.441-5.432c0-0.024,0-0.047,0-0.07 c0.747,0.415,1.6,0.665,2.509,0.694c-1.488-0.995-2.464-2.689-2.464-4.611c0-1.015,0.272-1.966,0.749-2.786 c2.733,3.351,6.815,5.556,11.418,5.788c-0.095-0.406-0.145-0.828-0.145-1.262c0-3.059,2.48-5.539,5.54-5.539 c1.593,0,3.032,0.672,4.042,1.749c1.261-0.248,2.448-0.709,3.518-1.343c-0.413,1.292-1.292,2.378-2.437,3.064 c1.122-0.136,2.188-0.432,3.183-0.873C38.257,18.766,37.318,19.743,36.237,20.524z" />
+            </svg>
+          </button>
+        </section>
+      </div>
+      <figure title="author photo"></figure>
+    </section>
+    <section class="about-intro">
+      <p>Hi there,</p>
+      <p>I still rememeber the first time I saw a computer in real life. It was amazing to see 2 bars moving up and down
+        the screen. While a sqaure(i.e ball) bounced between them. The game was called PONG</p>
+      <p>The first line of code I wrote was in BASICS on an <i>Apple &#8545;C</i>. It was a simple line doing simple
+        maths.
+      </p>
+      <p>Coding became exremely interesting when I was at university. Linking up the computer to i/o analog to digital
+        chips. Working out which address to use. Callibrating sensors and chips, then collecting data.</p>
+      <p>These experiements at university gave me a head start in the work force as an engineer where I directed a team
+        of engineers in automating the whole wind tunnel. The software can control the fan, control other mechanical
+        devices and do data analysis.</p>
+    </section>
+    <section class="about-hobby">
+      <h2>Sports and Hobbies</h2>
+      <h4>Team Sports</h4>
+      <p>I was always into team sport. I started off with soccer, then moved on to rugby union and cricket during
+        primary school. I love the comraderie. How individual spirit come togehter and achieving something great.</p>
+      <p> In high school I moved on to basketball, volleyball and hockey. It was great to lead or follow a great group
+        of people.</p>
+      <h4>Hobbies</h4>
+      <p>In my other time, I love to teach a small group of tai chi practitioners. I have been leading a group of people
+        that want to learn <i>qi-gong</i>and <i>tai chi</i>.</p>
+      <p>This helps me to slow down in my life and analyse what is around me, and correct myself.</p>
+    </section>
+  </main>
+
+  <!-- ****** FOOTER ******-->
+  <footer>
+    <small>Copyright &copy; 2022</small>
+  </footer>
+</body>
+
+</html>

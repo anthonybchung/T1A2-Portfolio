@@ -1,0 +1,133 @@
+.pdf-title {
+  height: 48px;
+  margin: 50px auto 0px auto;
+}
+
+
+.pdf-title a{
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: var(--penitentiary-color);
+}
+
+.pdf-title svg {
+  border-width: 0px;
+  margin-left: 10px;
+}
+
+
+.pdf-icon {
+  width: 48px;
+  height: auto;
+  color: var(--penitentiary-color);
+}
+
+.pdf-title a:hover{
+  fill: var(--quaternary-color);
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.mobile-description{
+  display: none;
+}
+
+.experience-heading {
+  font-size: 2em;
+  font-weight: 400;
+  margin: 40px 0px 10px 0px;
+  color: var(--penitentiary-color);
+}
+
+.experience-container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.experience-card {
+  width: 270px;
+  height: 190px;
+  margin: 4px 4px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--quaternary-color);
+  overflow: hidden;
+  background-color: var(--penitentiary-color);
+  transition-duration: 1s;
+}
+
+.header-card {
+  height: 48px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  background-color: var(--primary-color);
+  color: var(--penitentiary-color);
+}
+
+.header-card h1 {
+  width: 70%;
+  height: 100%;
+  display: inline-block;
+  font-size: 1em;
+}
+
+.header-card h2 {
+  width: 30%;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: 300;
+  text-align: right;
+}
+
+.card-description {
+  padding: 0px 5px;
+  color: var(--primary-color);
+}
+
+.experience-card ul {
+  margin-left: 20px;
+}
+
+/***** DESKTOP *****/
+@media screen and (min-width: 980px) {
+  .experience-card {
+    margin: 10px;
+  }
+}
+
+/*** Mobile only ****/
+/** default card height is header height ***/
+/** when header is clicked, it will expand to normal height **/
+@media screen and (max-width: 599px) {
+  .experience-card {
+    height: 48px;
+  }
+
+  .experience-card:hover,
+  .experience-card:focus {
+    cursor: pointer;
+    height: 190px;
+    transition-duration: 1s;
+  }
+
+  .mobile-description{
+    margin: 30px 0px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: var(--penitentiary-color);
+  }
+  
+}

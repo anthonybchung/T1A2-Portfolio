@@ -1,0 +1,281 @@
+.banner {
+  width: 100%;
+  padding: 10px;
+  margin-top: 30px;
+  font-style: italic;
+  color: var(--penitentiary-color);
+}
+
+.pre-heading {
+  font-size: 1em;
+  font-weight: 300;
+  animation-name: fadein;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+}
+
+.main-heading {
+  font-size: 2em;
+  font-weight: 400;
+  opacity: 0;
+  animation-name: fadein;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+.code-skill {
+  width: 300px;
+  height: 165px;
+  margin: 10px auto 0px auto;
+  overflow: hidden;
+}
+
+.code-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  animation-name: riseshow;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+.code-card {
+  width: 100px;
+  height: 165px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  overflow: hidden;
+  opacity: 0;
+  border-color: var(--quaternary-color);
+  background-color: var(--penitentiary-color);
+  animation-name: fadein;
+  animation-fill-mode: forwards;
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+
+.code-card h1 {
+  width: 100%;
+  height: 32px;
+  font-size: 1em;
+  text-align: center;
+  padding-top: 7px;
+  background-color: var(--primary-color);
+  color: var(--penitentiary-color);
+}
+
+.code-card ul {
+  list-style-type: none;
+  font-size: 0.8em;
+}
+
+.code-card li {
+  display: block;
+  margin: 5px 3px 5px 3px;
+}
+
+.code-card img {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  top: 3px;
+  margin-right: 5px;
+}
+
+.connector-card {
+  width: 100px;
+  height: 165px;
+  display: flex;
+  align-items: center;
+  animation-name: fadein;
+  animation-fill-mode: forwards;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  
+}
+
+.slogan {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  color: var(--penitentiary-color);
+  background-color: var(--primary-color);
+  animation-name: fadein;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+
+.external-links {
+  width: 100%;
+  height: 48px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.external-links button {
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  border-width: 0px;
+}
+
+.external-icons {
+  width: 48px;
+  height: 48px;
+  fill: var(--penitentiary-color);
+  animation-name: fadein;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 3s;
+}
+
+.external-links button:hover {
+  fill: var(--quaternary-color);
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+/****** TABLET *****/
+@media screen and (min-width: 600px) {
+  .banner {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .pre-heading {
+    font-size: 2em;
+    font-weight: 300;
+  }
+
+  .main-heading {
+    font-size: 3.8em;
+    font-weight: 500;
+  }
+
+  .code-skill {
+    width: 550px;
+    height: 250px;
+  }
+
+  .code-card {
+    width: 200px;
+    height: 250px;
+  }
+
+  .code-card ul {
+    list-style-type: none;
+    font-size: 1em;
+  }
+
+  .code-card li {
+    display: block;
+    margin: 10px;
+  }
+
+  .code-card img {
+    position: relative;
+    width: 27px;
+    height: 27px;
+    top: 7px;
+    margin: 0px 15px;
+  }
+
+  .connector-card {
+    width: 150px;
+    height: 250px;
+  }
+
+  .slogan {
+    width: 100%;
+    margin-top: 30px;
+    font-size: 1.5em;
+    font-weight: 200;
+  }
+}
+/***** DESKTOP *****/
+@media screen and (min-width: 980px) {
+  .banner {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .pre-heading {
+    font-size: 2em;
+  }
+
+  .main-heading {
+    font-size: 4.8em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    word-spacing: 0.2em;
+  }
+
+  .code-skill {
+    width: 700px;
+    height: 350px;
+  }
+
+  .code-card {
+    width: 250px;
+    height: 350px;
+  }
+
+  .code-card ul {
+    list-style-type: none;
+    font-size: 1.5em;
+  }
+
+  .code-card li {
+    display: block;
+    margin: 15px;
+  }
+
+  .code-card img {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    top: 12px;
+    margin: 0px 15px;
+  }
+
+  .connector-card {
+    width: 200px;
+    height: 350px;
+  }
+
+  .slogan {
+    width: 100%;
+    margin-top: 30px;
+    font-size: 2em;
+    font-weight: 200;
+  }
+
+  .external-links button {
+    width: 55px;
+    height: 55px;
+  }
+
+  .external-icons {
+    width: 55px;
+    height: 55px;
+    fill: var(--penitentiary-color);
+    animation-name: fadein;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 3s;
+  }
+}

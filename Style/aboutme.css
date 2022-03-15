@@ -1,0 +1,153 @@
+.about-banner{
+    width: 300px;
+    height:120px;
+    margin: 30px auto 0px auto;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 0.8em;
+    font-weight: 100;
+    color: var(--penitentiary-color);
+}
+
+.about-info{
+    width: 180px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+address{
+    width: 180px;
+    height: 20px;
+    font-size: 1em;
+}
+
+address:hover{
+    color: var(--quaternary-color);
+    cursor: pointer;
+    transform: scale(1.1);
+    transform-origin: left center;
+}
+
+
+.external-links{
+    width: 180px;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+ 
+ .external-links button{
+     width: 32px;
+     height: 32px;
+     background-color: transparent;
+     border-width: 0px;
+ }
+
+ .external-links button:hover {
+    fill: var(--quaternary-color);
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  
+
+ .external-icons{
+    fill: var(--penitentiary-color);
+ }
+
+.about-banner figure{
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    background-image: url('/Assets/anthony.jpeg');
+    background-size: cover;
+    filter: grayscale(0.9);
+    opacity: 0.6;
+}
+
+.about-banner a{
+    color: var(--penitentiary-color);
+}
+
+.about-intro, .about-hobby{
+    width: 300px;
+    height: auto;
+    margin: 20px auto 10px auto;
+    text-align:justify;
+}
+
+p,h2, h4{
+    color: var(--penitentiary-color);
+    margin-top: 10px;
+}
+
+
+
+/****** TABLET *****/
+@media screen and (min-width: 600px) {
+.about-banner{
+    width: 580px;
+    height: 300px;
+}
+
+.about-info{
+    width: 300px;
+    height: 80px;
+}
+
+.about-info h2{
+    font-size: 2.5em;
+}
+
+.about-info address{
+    font-size: 1.3em;
+}
+
+.about-banner figure{
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+}
+
+.external-links{
+    width: 250px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.external-links button{
+    width: 48px;
+    height: 48px;
+}
+
+.about-intro, .about-hobby{
+    width: 580px;
+    height: auto;
+    margin: 20px auto 10px auto;
+    text-align:justify;
+}
+
+p,h4{
+    margin-top: 15px;
+}
+
+h2{
+    margin-top:30px;
+}
+}
+
+/***** DESKTOP *****/
+@media screen and (min-width: 980px) {
+
+    .about-intro, .about-hobby{
+        width: 800px;
+        height: auto;
+        margin: 20px auto 10px auto;
+        text-align:justify;
+    }
+    
+}
