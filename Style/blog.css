@@ -1,3 +1,7 @@
+/*Name: blog.css*/
+/*purpose: the styling here is only for the page blog.html */
+
+
 .blog-banner {
   width: 100%;
   height: 218px;
@@ -7,7 +11,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  background-image: url('/Assets/kalen-emsley-INf4LQZwxRU-unsplash.jpeg');
+  background-image: url('/Assets/kalen-emsley-INf4LQZwxRU-unsplash.webp');
   background-size: 100% auto;
   color: var(--primary-color);
 }
@@ -33,6 +37,18 @@
   height: auto;
   margin-top: 50px;
 }
+
+/* blog-card 
+    FLEX-DIRECTION: for phones => row.
+                    for tablets,deskoptop => columns.
+
+    FLEX ORDER for phones have to be changed
+    Element order for children.
+    (tables, desktop) =>[img, h1, time,summary] flex-direction: column
+    (phones) =>[h1,time,img,summary] flex-direction: row.
+
+    order is in PHONE ONLY media query.
+*/
 
 .blog-card {
   width: 300px;
@@ -68,18 +84,14 @@
   background-color: var(--penitentiary-color);
 }
 
-/* phone:
-    flex direction: anything above phone width has a 
-    flex direction of column.
-    element order is different on phone and above phone width.
-    */
+/**** PHONE ONLY ****/
 @media screen and (max-width: 600px) {
   .blog-card {
     flex-direction: row;
   }
 
   .blog-card img {
-    width: 300px;
+    width: 295px;
     height: 187px;
     order: 3;
   }

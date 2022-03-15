@@ -1,3 +1,17 @@
+/*Name: style.css*/
+/*purpose: the base css file that is used by all web pages */
+/*contains:
+    universal selector.
+    variable css.
+    header.
+    nav.
+    footer.
+    @keyframes for animation.
+    */
+
+
+/*universal selector*/
+/*border-box: padding and margin will be easier to work with */
 * {
   box-sizing: border-box;
   padding: 0px;
@@ -82,6 +96,8 @@ header h1 {
   font-weight: 400;
 }
 
+/*button will appear in phone view port*/
+/*but will be over written in the table view port to display: none */
 .button-menu {
   height: 40px;
   width: 40px;
@@ -151,7 +167,7 @@ header h1 {
 }
 
 /***********************************************/
-
+/* sliding nav bar for phones */
 .nav-mobile {
   width: 100vw;
   height: 0vh;
@@ -166,6 +182,8 @@ header h1 {
   transition-duration: var(--trans-duration);
 }
 
+/* eventhandler add .close when menu button is clicked.
+it will subtract when pressed again and goes back to the .nav-mobile style */
 .nav-mobile.close {
   width: 100vw;
   height: 100vh;
@@ -206,6 +224,7 @@ a.current-page {
   color: var(--current-page);
 }
 
+/*main section for phones */
 main {
   width: 350px;
   margin: 0px auto;
@@ -214,6 +233,7 @@ main {
   /* Main minimum 100vh so footer can be at the bottom of the page */
   min-height: calc(100vh - 180px);
 }
+
 
 footer {
   width: 350px;
@@ -228,6 +248,7 @@ footer small {
   margin: 50px 20px 20px auto;
 }
 /****** TABLET *****/
+/*if the selector is below, it will overwrite what is above */
 @media screen and (min-width: 600px) {
   .header-container {
     width: 600px;
@@ -273,7 +294,7 @@ footer small {
     color: var(--current-page);
   }
 
-  /* button for sliding menu is not displayed when media query for tablet and desktop is true */
+  /* do not show button-menu if it is in tablet or desktop view port. */
   .button-menu {
     display: none;
   }
@@ -287,6 +308,7 @@ footer small {
     display: none;
   }
 
+  /*main section for tablets*/
   main {
     width: 600px;
     margin: 0px auto;
@@ -313,6 +335,7 @@ footer small {
     margin: 0px 20px;
   }
 
+  /*main section for desktop*/
   main {
     width: 980px;
   }

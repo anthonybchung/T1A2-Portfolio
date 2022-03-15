@@ -5,10 +5,13 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!------------------------------------------------------------------------->
+  <!-----META FOR SEO-->
   <meta name="description" content="Author: A B Chung, Portfolio">
+  <!-----FAVICON FOR TAB ----->
   <link rel="icon" type="image/x-icon" href="Assets/LOGO.ico" />
 
-  <!-- Fonts-->
+  <!-- GOOGLE Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -73,6 +76,7 @@
         </div>
         <h1>ABCHUNG Stack</h1>
       </div>
+      <!-- only appears in tablet or desktop width-->
       <nav class="nav-desktop">
         <ul>
           <li><a tabindex="0" class="current-page" href="./index.html">Home</a></li>
@@ -97,12 +101,33 @@
   </nav>
 
   <!-- ****** MAIN ******-->
+  <!--
+    4 sections:
+      -banner
+        -h2
+        -h1
+      -figure code-skill
+        div code-conatiner
+          -section code-card
+            -h1
+            -ul
+              -li (img,description inline)
+          -section code-connector
+          -section code-card
+      -section slogan
+      -section external-links Flex Box.
+
+  -->
   <main>
     <section class="banner">
       <h2 class="pre-heading">Anthony B. Chung</h2>
       <h1 class="main-heading">Full Stack Developer</h1>
     </section>
+    <!-- code-sill over-flow: hidden-->
     <figure class="code-skill">
+      <!--  code-container animates.
+            initial top-margin: 100%
+            final   top-margin: 0%;-->
       <div class="code-container">
         <section class="code-card">
           <h1>Front-End</h1>
@@ -147,8 +172,10 @@
       </div>
     </figure>
     <section class="slogan">
+      <!-- animation delayed-->
       <h1>Connecting you to the world.</h1>
     </section>
+    <!--flexbox row contains 3 buttons-->
     <section class="external-links">
       <button tabindex="0" type="button" aria-label="github button"
         onclick="window.open('https://github.com/anthonybchung', '_blank');">

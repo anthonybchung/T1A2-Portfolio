@@ -5,10 +5,13 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!------------------------------------------------------------------------->
+  <!-----META FOR SEO-->
   <meta name="description" content="Author: A B Chung, Portfolio Qualifications">
+  <!-----FAVICON FOR TAB ----->
   <link rel="icon" type="image/x-icon" href="Assets/LOGO.ico" />
 
-  <!-- Fonts-->
+  <!-- GOOGLE Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -73,6 +76,7 @@
         </div>
         <h1>Experience/Education</h1>
       </div>
+      <!-- only appears in tablet or desktop width-->
       <nav class="nav-desktop">
         <ul>
           <li><a tabindex="0" href="./index.html">Home</a></li>
@@ -98,10 +102,27 @@
   </nav>
 
   <!-- ****** MAIN ******-->
+  <!-- 3 main sections.
+          -pdf link
+          - work-experience
+              -h2
+              -<div> experience-container flex-bow row.
+                -article
+                  -header
+                    -h1
+                    -h2
+                  -<div> card description
+                    -h3
+                    -ul
+                      -li
+          -education
+            same as work-experience
+    -->
   <main>
     <section class="pdf-title">
       <a tabindex="0" href='/Assets/Resume-IT-2022-online.pdf' target="_blank">
         <h2>Click for resum&eacute;</h2>
+        <!---PDF icon-->
         <svg class="pdf-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
           <path
             d="M32,21.16a1.19,1.19,0,0,0,.17-.31c-.09,0-.22-.15-.89-.15a10.87,10.87,0,0,0-1.37.08c.62.48.77.72,1.17.72A1.14,1.14,0,0,0,32,21.16Z"
@@ -127,10 +148,18 @@
         </svg>
       </a>
     </section>
+    <!-- mobile-description: only appears on phone width-->
     <h2 class="mobile-description">Click on tiles for descriptions.</h2>
+
     <section class="work-experience">
       <h2 class="experience-heading">Work Experience</h2>
       <div class="experience-container">
+        <!-- 
+      phone width
+      article is overflow: hidden.
+      article height is same as header to hide <div> card description.
+      height will only expand when hovered or focused.
+        -->
         <article tabindex="0" class="experience-card">
           <header class="header-card">
             <h1>Digital Print and Design Pty Ltd</h1>

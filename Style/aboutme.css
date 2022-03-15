@@ -1,3 +1,7 @@
+
+/*Name: aboutme.css*/
+/*purpose: the styling here is only for the page aboutme.html */
+
 .about-banner{
     width: 300px;
     height:120px;
@@ -64,7 +68,7 @@ address:hover{
     width: 120px;
     height: 120px;
     border-radius: 60px;
-    background-image: url('/Assets/anthony.jpeg');
+    background-image: url('/Assets/anthony.webp');
     background-size: cover;
     filter: grayscale(0.9);
     opacity: 0.6;
