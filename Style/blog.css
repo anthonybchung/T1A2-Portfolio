@@ -12,7 +12,8 @@
   align-items: center;
   border-radius: 10px;
   background-image: url('/Assets/kalen-emsley-INf4LQZwxRU-unsplash.webp');
-  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: var(--primary-color);
 }
 
@@ -62,6 +63,10 @@
   margin: 10px auto;
   overflow: hidden;
   background-color: var(--quaternary-color);
+}
+
+.blog-card img{
+  object-fit: cover;
 }
 
 .blog-card h1 {
